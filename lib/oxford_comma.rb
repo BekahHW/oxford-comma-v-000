@@ -1,3 +1,23 @@
 def oxford_comma(array)
-
+ if array.length == 1
+    array[0].to_s
+    
+ elsif array.length == 2
+    "#{array[0].to_s} and #{array[1].to_s}"
+    
+  else
+  array.insert(-2, "and")
+   array.join(", ").to_s
+    # myString.insert 32, " and"
+    # "#{array.length.join(", ")} and #{array.last}"
+    # array.map { |i| i.to_s }.join(",")}
 end
+end
+
+
+
+
+
+
+  
+    
