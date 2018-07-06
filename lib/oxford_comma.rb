@@ -12,7 +12,9 @@ def oxford_comma(array)
   # new_string << ", and beets"
     # myString.insert 32, " and"
     # "#{array.length.join(", ")} and #{array.last}"
-    array.map { |i| i.to_s }.join(",")}
+    array.map { |i| i.to_s }.to_sentence
+    
+    # join(",")}
 end
 end
 
