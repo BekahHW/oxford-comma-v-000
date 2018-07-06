@@ -6,9 +6,8 @@ def oxford_comma(array)
     "#{array[0].to_s} and #{array[1].to_s}"
     
   else
-    array[0..-1].join(", ") + " and " 
-    # + array[-1]
-    
+    # array[0..-1].join(", ") + " and " + array[-1]
+    array.join(",") + " and " + array[-1]
     # array.to_sentence
   # array.insert(-2, "and")
   # new_string = array.join(", ").to_s
